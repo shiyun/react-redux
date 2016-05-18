@@ -1,0 +1,39 @@
+{
+  "name": "reactRedux",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node-dev ./bin/www",
+    "build": "webpack --watch",
+    "watch": "webpack-dev-server --hot --inline --progress"
+  },
+  "dependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "^2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-router": "^0.1.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "jsx-loader": "^0.13.2",
+    "less-loader": "^2.2.3",
+    "react-hot": "^0.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
