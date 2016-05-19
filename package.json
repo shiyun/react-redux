@@ -23,6 +23,7 @@
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-router": "^0.1.0",
+    "redux-thunk": "^2.1.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
