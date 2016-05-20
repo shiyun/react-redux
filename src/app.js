@@ -53,7 +53,8 @@ import * as CounterActions from './actions/counter'
 //将state.counter绑定到props的counter
 function mapStateToProps(state) {
   return {
-    counter: state.counter
+    counter: state.counter.counter,
+	show_bool: state.counter.show_bool
   }
 }
 
