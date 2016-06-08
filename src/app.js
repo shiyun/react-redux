@@ -48,7 +48,7 @@ ReactDOM.render(<MessageList messages={messages} />, document.getElementById('ap
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Counter from './components/Counter'
-import * as CounterActions from './actions/counter'
+import * as CounterActions from './actions/index'
 
 //将state.counter绑定到props的counter
 function mapStateToProps(state) {

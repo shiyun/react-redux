@@ -1,7 +1,8 @@
 var path = require('path');
+var node_modules = path.resolve(__dirname, 'node_modules');
+var webpack = require('webpack');
 
-module.exports = {
-
+module.exports = {	
    entry: [
       path.resolve(__dirname, './src/index.js')
     ],
@@ -11,7 +12,6 @@ module.exports = {
         filename: 'app.js',
 		publicPath: 'http://127.0.0.1:3000/'
     },
-
     module: {
 		loaders: [{
 			test: /\.jsx?$/, 
@@ -28,5 +28,20 @@ module.exports = {
 			test: /\.(png|jpg|gif)$/,
 			loader: 'url-loader?limit=8192'
 		}]
-  }
+  },
+  plugins:  [
+			new webpack.DefinePlugin({
+			  "process.env": {
+				NODE_ENV: JSON.stringify("production") //production development
+			  }
+			}),
+			new webpack.optimize.UglifyJsPlugin({
+			  compress: {
+				//supresses warnings, usually from module minification
+				warnings: false
+			  }
+			})
+		]
+			
+
 };

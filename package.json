@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node-dev ./bin/www",
     "build": "webpack --watch",
-    "watch": "webpack-dev-server --hot --inline --progress"
+    "watch": "webpack-dev-server --hot --inline --progress --content-base . --history-api-fallback"
   },
   "dependencies": {
     "babel-core": "^6.9.0",
@@ -17,10 +17,12 @@
     "debug": "^2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "history": "^3.0.0",
     "morgan": "~1.6.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
     "redux": "^3.5.2",
     "redux-router": "^0.1.0",
     "redux-thunk": "^2.1.0",

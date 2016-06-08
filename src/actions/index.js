@@ -18,11 +18,11 @@ export function incrementIfOdd() {
   return (dispatch, getState) => {
     let states = getState();
     //获取state对象中的counter属性值
-    const  counter = states.counter;
+    const  counter = states.counter.counter;
 
     //偶数则返回
     if (counter % 2 === 0) {
-      return
+      return ;
     }
     //没有返回就执行加一
     dispatch(increment())

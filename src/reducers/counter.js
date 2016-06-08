@@ -1,4 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER, SHOW_BOOL } from '../actions/counter'
+import { INCREMENT_COUNTER, DECREMENT_COUNTER, SHOW_BOOL } from '../actions/index'
 let initState = {
 	counter: 0,
 	show_bool: false
