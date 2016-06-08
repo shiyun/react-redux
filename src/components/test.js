@@ -3,10 +3,15 @@ import { Link  } from 'react-router'
 
 class TestCont extends Component {
     render() {       
-		const {counter} = this.props;
+		const {counter, show_bool, adata} = this.props;
+		console.log(`from test: `);
+		console.log(this.props);
+
+		let show = String(show_bool);
         return (
             <div>
 				<p>{counter}</p>
+				<p>{JSON.stringify(adata)}</p>
 				<Link to="/app">to index</Link>
             </div>
         )

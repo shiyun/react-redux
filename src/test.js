@@ -7,7 +7,8 @@ import * as CounterActions from './actions/index'
 function mapStateToProps(state) {
   return {
     counter: state.counter.counter,
-	show_bool: state.counter.show_bool
+	show_bool: state.counter.show_bool,
+	adata: state.counter.data
   }
 }
 
