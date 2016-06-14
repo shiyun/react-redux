@@ -32,6 +32,7 @@
   "devDependencies": {
     "css-loader": "^0.23.1",
     "jsx-loader": "^0.13.2",
+    "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "react-hot": "^0.1.0",
     "style-loader": "^0.13.1",

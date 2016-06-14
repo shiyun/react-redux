@@ -4,9 +4,12 @@ import { Router, Route, browserHistory, IndexRoute, Link, History } from 'react-
 import { Provider } from 'react-redux'
 //import { createHistory, createHashHistory, useBasename } from 'history'
 
-import App from './app'
+import Index from './pages/index'
+import Login from './pages/Login/login'
+import Ptype from './pages/Login/ptype'
 import Test from './test'
 import configureStore from './store/configureStore'
+import './less/styles.less'
 
 const store = configureStore();
 //const history = createHistory();
@@ -14,9 +17,12 @@ const store = configureStore();
 render(
     <Provider store={store}>
         <Router history={ browserHistory }>
-            <Route path="/" component={App} />
-            <Route path="/app" component={App} />
-            <Route path="/test" component={Test} />
+            <Route path="/" component={Index} />
+            <Route path="/index" component={Index} />
+            <Route path="/login/:id" component={Login} />
+            <Route path="/ptype/:id" component={Ptype}>
+                <Route path="/test" component={Test} />
+            </Route>
         </Router>
     </Provider>,
   document.getElementById('app')

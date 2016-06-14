@@ -12,6 +12,7 @@ export default function configureStore(initialState) {
   const store = createStoreWithMiddleware(reducer, initialState, window.devToolsExtension ? window.devToolsExtension() : undefined)
   //chrome 显示 redux tools createStoreWithMiddleware第三个参数作用 //window.devToolsExtension ? window.devToolsExtension() : undefined
   //热替换选项
+
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('../reducers', () => {

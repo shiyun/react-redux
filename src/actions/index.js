@@ -19,7 +19,7 @@ export function decrement() {
 export function incrementIfOdd() {
   return (dispatch, getState) => {
     let states = getState();
-    console.log(states);
+    //console.log(states);
     //获取state对象中的counter属性值
     const  counter = states.counter.counter;
 
@@ -48,7 +48,7 @@ export function showdiv(){
 
 export function getData(){
   return dispatch=>{
-    return httpService.get('/testApi', 'POST', { number:4, type:1 }, res=>dispatch({data: res, type: GET_DATA}), err=>console.log(err));
+     httpService.get('/testApi', 'POST', { number:4, type:1 }, res=>dispatch({data: res, type: GET_DATA}), err=>console.log(err));
   }
 }
 

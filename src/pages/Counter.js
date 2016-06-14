@@ -6,8 +6,8 @@ class Counter extends Component {
     render() {
         //从组件的props属性中导入四个方法和一个变量
         const { increment, incrementIfOdd, incrementAsync, decrement, counter, show_bool, showdiv, getData, adata } = this.props;
-		console.log(`from index: `);
-		console.log(this.props);
+		//console.log(`from index: `);
+		//console.log(this.props);
         //渲染组件，包括一个数字，四个按钮
         return (
             <section>
@@ -25,9 +25,8 @@ class Counter extends Component {
         <div><button onClick={()=>showdiv()}>show</button></div>
         <div hidden={show_bool}>ddddd</div>
 			<br />
-			<Link to="test">to test</Link>
-			<br /><br />		
-			<div><button onClick={()=>getData()}>getData</button></div>
+			<Link to="/test">to test</Link>
+			<br /><br />
 			<div>{JSON.stringify(adata)}</div>
             </section>
 		
