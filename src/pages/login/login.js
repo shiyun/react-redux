@@ -7,31 +7,16 @@ import Footer from '../components/footer'
 import './login.less'
 
 class Login extends Component {
+	constructor(props){
+		super(props);
+		console.log(this.props.params);
+	}
+
     render() {
         return (
 			<div>
-				<section className="cont">
-					<img src="/images/banner.jpg" width="100%" />
-				</section>
-
-				<section className="cont pb120">
-					<ul className="list-proIndex">
-						<li>
-							<a href="/ptype/1"><img src="/images/img1.png" width="100%" /></a>
-						</li>
-						<li>
-							<a href="/ptype/2"><img src="/images/img2.png" width="100%" /></a>
-						</li>
-						<li>
-							<a href="/ptype/3"><img src="/images/img3.png" width="100%" /></a>
-						</li>
-						<li>
-							<a href="/ptype/4"><img src="/images/img4.png" width="100%" /></a>
-						</li>
-					</ul>					
-				</section>
-				<Footer />	
-				{this.props.children}
+				<div>dsdfsdf</div>
+				<Footer />
 			</div>
 		)
     }

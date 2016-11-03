@@ -55,7 +55,7 @@ app.use(function(err, req, res, next) {
   res.render('error', {
     message: err.message,
     error: {},
-    curServer: 'localhost:8080'
+    curServer: 'localhost:3000'
   });
 });
 
