@@ -1,0 +1,46 @@
+.showIcons {
+  display: flex;
+  flex-direction: column;
+}
+.iconName {margin-bottom:1rem;text-align:center;display:inline-block;}
+.iconNameTxt {vertical-align: middle;}
+.iconNameImg {vertical-align: middle;}
+.shade {position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.7);}
+
+.container {background-color:#eee;padding: 3.8rem 0 0;}
+.searchWrap {
+	position: fixed;top:0;left:0;right:0;height: 1.8rem; line-height: 1.8rem; padding: .2rem 1rem;background-color:#3DBED8;box-sizing:border-box;z-index:1;
+}
+.searchInpWrap {width: 100%;}
+.inp-search {height:1.4rem;line-height: 1.4rem;border-radius: .2rem;background-color: #159FBB;color:#fff;padding: 0 .2rem;font-size:14px;width:88%;
+&:extend(.fy);}
+.searchIconWrap {position:absolute;right:.1rem;top:.05rem;height: 1rem;width:1rem;}
+.searchIcon {height:1rem;width:1rem;}
+.bbsList {&:extend(.bgWhite);border-radius:4px;padding:.6rem;margin-bottom:1rem;}
+.bbsTit {&:extend(.f16);font-weight: 700;}
+.bbsContWrap {margin: .2rem 0 .8rem;}
+.bbsCont {&:extend(.f14,.c6);word-break: break-word;}
+.bbsUserName {&:extend(.f12,.vm,.c9,.ml10);}
+.bbsUserHeader {height:1.2rem;width:1.2rem;border-radius:50%;&:extend(.vm);}
+.btn-cancel {height:1.4rem;line-height: 1.4rem;&:extend(.cwhite,.f14,.tc);position:absolute;right:0;top:0;}
+.listWrap {margin:1rem;}
+.swiperImg {width:100%;height:100%;}
+.navBarWrap {height:2rem;line-height: 1.84rem;&:extend(.fixed,.bgWhite,.fy,.f14);top:1.8rem;left:0;right:0;z-index:1;box-sizing: border-box;}
+.navTxt {&:extend(.dib,.tc);padding:0 1rem;border-bottom: .2rem solid #fff;box-sizing: border-box;}
+.navTxtOn {border-bottom: .2rem solid #3dbed8;}
+.navList {&:extend(.oh);width:100%;padding-right: 3rem; white-space: nowrap;box-sizing: border-box;
+}
+
+.choseNav {&:extend(.pa,.tc,.f14);color:#3dbed8;top:0;right:0;bottom:0;width:3rem;box-shadow: -3px 0 4px rgba(0,0,0,.5);}
+.choseNavListWrap {
+	&:extend(.fixed);background-color: rgba(0,0,0,.5);top:3.8rem;left:0;right:0;bottom:0;z-index: 2;
+}
+.choseNavList {
+	&:extend(.bgWhite);padding:1rem 0;border-top: 1px solid #ddd;display:flex;justify-content: space-around;flex-flow: row wrap;
+}
+.choseNavTxt {border:1px solid #ddd;border-radius: 2px;height:1.6rem;line-height: 1.6rem;&:extend(.tc);width:28%;}
+.curChoseNav {border-color: #3dbed8;}
+
+.searchWrap {
+	display: flex;
+}

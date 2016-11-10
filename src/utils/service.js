@@ -2,12 +2,12 @@
 
 class HttpService {
     constructor(){
-        this.baseUrl = 'http://mall.pocketlawyer.cn/';
+        baseUrl = 'http://mall.pocketlawyer.cn/';
     }
 
     toQueryString(obj) {
         return obj ? Object.keys(obj).sort().map(function (key) {
-            var val = obj[key];
+            let val = obj[key];
             if (Array.isArray(val)) {
                 return val.sort().map(function (val2) {
                     return encodeURIComponent(key) + '=' + encodeURIComponent(val2);
@@ -18,10 +18,12 @@ class HttpService {
         }).join('&') : '';
     }
 
-    get(url, type, data, successCB, errorCB){
+    get(url, data, successCB, errorCB, type){
         if (!successCB) successCB = (res)=>console.log(response.text());
         if (!errorCB) errorCB = (error)=>console.warn(error);
 		
+		type = type || 'POST';
+
         fetch(url,{
                 method: type,
                 headers: {
